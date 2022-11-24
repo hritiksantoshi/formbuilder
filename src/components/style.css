@@ -2782,6 +2782,10 @@ a.Footer-module--link--8b124 {
 .BuilderPage-module--pageWrapper--44aa7 > section:nth-child(3) {
   order: 2;
 }
+.BuilderPage-module--form--ab580{
+  width: 33%;
+  margin-left: 40px;
+}
 .BuilderPage-module--form--ab580 input,
 .BuilderPage-module--form--ab580 select {
   border-radius: 4px;

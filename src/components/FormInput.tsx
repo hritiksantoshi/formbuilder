@@ -4,7 +4,7 @@ import "./style.css";
 export const FormInput = () => {
   return (
     <>
-      <form className="BuilderPage-module--htmlForm--ab580">
+      <form className="BuilderPage-module--form--ab580">
         <h2 className="typography-module--title--05771">Input Creator</h2>
         <p style={{ fontSize: 14 }}>
           <span className="Popup-module--icon--cc4ed [object Object]">!</span>
@@ -12,15 +12,10 @@ export const FormInput = () => {
           htmlForm button will create a new htmlForm with the updates.
         </p>
         <label>Name: </label>
-        <input
-          aria-label="name"
-          aria-invalid="false"
-          name="name"
-          value=""
-        ></input>
+        <input autoComplete="off" aria-label="name" aria-invalid="false" name="name"/>
         <div style={{ maxHeight: 0, transition: "all 0.6s linear 0s" }}></div>
         <label>Type: </label>
-        <select aria-label="Select type" name="type">
+        <select  className="Form-module--input--42b56" aria-label="Select type" name="type">
           <option value="text">Text</option>
           <option value="password">Password</option>
           <option value="select">Select</option>
@@ -44,7 +39,7 @@ export const FormInput = () => {
         </select>
         <label>
           {" "}
-          <input type="checkbox" name="toggle" />
+          <input style={{marginBottom: 20}} type="checkbox" name="toggle" />
           Show validation
         </label>
         <div
@@ -61,6 +56,8 @@ export const FormInput = () => {
             </label>
             <label htmlFor="max">Max</label>
             <input
+            className="Form-module--input--42b56"
+            style={{marginBottom: 20}}
               aria-label="max"
               autoComplete="false"
               name="max"
